@@ -16,7 +16,12 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected $namespace = 'App\Http\Controllers';
     protected $adminnamespace = 'App\Http\Controllers\Admin';
-    protected $membernamespace = 'App\Http\Controllers\Member';
+    /**
+     * The path to the "home" route for your application.
+     *
+     * @var string
+     */
+    public const HOME = '/home';
 
     /**
      * Define your route model bindings, pattern filters, etc.
@@ -39,7 +44,6 @@ class RouteServiceProvider extends ServiceProvider
     {
         $this->mapApiRoutes();
         $this->mapAdminRoutes();
-        $this->mapMemberRoutes();
         $this->mapWebRoutes();
 
         //
@@ -55,8 +59,8 @@ class RouteServiceProvider extends ServiceProvider
     protected function mapWebRoutes()
     {
         Route::middleware('web')
-             ->namespace($this->namespace)
-             ->group(base_path('routes/web.php'));
+            ->namespace($this->namespace)
+            ->group(base_path('routes/web.php'));
     }
 
     /**
@@ -73,20 +77,6 @@ class RouteServiceProvider extends ServiceProvider
             ->group(base_path('routes/admin.php'));
     }
     /**
-     * Define the "admin" routes for the application.
-     *
-     * These routes all receive session state, CSRF protection, etc.
-     *
-     * @return void
-     */
-    protected function mapMemberRoutes()
-    {
-        Route::middleware(['member','auth'])
-            ->namespace($this->membernamespace)
-            ->group(base_path('routes/member.php'));
-    }
-
-    /**
      * Define the "api" routes for the application.
      *
      * These routes are typically stateless.
@@ -97,7 +87,7 @@ class RouteServiceProvider extends ServiceProvider
     {
         Route::prefix('api')
             ->middleware('api')
-            ->namespace('App\Http\Controllers\Api')
+            ->namespace($this->namespace)
             ->group(base_path('routes/api.php'));
     }
 }

@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'WDCP'),
+    'name' => env('APP_NAME', 'Laravel'),
 
     /*
     |--------------------------------------------------------------------------
@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG', false),
+    'debug' => (bool) env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -67,8 +67,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
-
+    'timezone' => 'PRC',
     /*
     |--------------------------------------------------------------------------
     | System Settings
@@ -77,15 +76,14 @@ return [
     | Site home page key words and description and record information
     | and other related settings
     */
-    'webname'=>'极速云游戏盾防护系统-分布式DDoS安全云防御体系',
-    'indexname'=>'极速云游戏盾防护',
-    'keywords'=>'游戏盾,游戏盾防护,游戏防护盾',
-    'description'=>'极速云游戏盾防护系统针对游戏的玩法、受攻击场景，专门研发了游戏防御专用调度清洗引擎，最大程度保障游戏的高可用性、低延时体验，免SDK快速接入，5分钟即可完成接入。可与游戏服务器通过加密渠道传输玩家IP，保持接入防御前后的功能体验一致性',
+    'webname'=>'ProxyGo高性能http,https,websocket,tcp,socks5代理服务',
+    'indexname'=>'ProxyGo',
+    'keywords'=>'代理服务器,http代理,https代理,websocket代理,tcp代理,socks5代理',
+    'description'=>'ProxyGo是golang实现的高性能http,https,websocket,tcp,socks5代理服务器,支持内网穿透,链式代理,通讯加密,智能HTTP,SOCKS5代理,黑白名单,限速,限流量,限连接数,跨平台,KCP支持,认证API',
     'api'=>'',
     'mip_api'=>'',
     'mip_history'=>'',
     'cachetime'=>60*24*60,
-    /*
     /*
     |--------------------------------------------------------------------------
     | Application Locale Configuration
@@ -182,12 +180,7 @@ return [
         /*
          * Package Service Providers...
          */
-        Collective\Html\HtmlServiceProvider::class,
-        Overtrue\LaravelUEditor\UEditorServiceProvider::class,
-        Mews\Captcha\CaptchaServiceProvider::class,
-        Jenssegers\Agent\AgentServiceProvider::class,
-        Intervention\Image\ImageServiceProvider::class,
-        Maatwebsite\Excel\ExcelServiceProvider::class,
+
         /*
          * Application Service Providers...
          */
@@ -229,6 +222,7 @@ return [
         'File' => Illuminate\Support\Facades\File::class,
         'Gate' => Illuminate\Support\Facades\Gate::class,
         'Hash' => Illuminate\Support\Facades\Hash::class,
+        'Http' => Illuminate\Support\Facades\Http::class,
         'Lang' => Illuminate\Support\Facades\Lang::class,
         'Log' => Illuminate\Support\Facades\Log::class,
         'Mail' => Illuminate\Support\Facades\Mail::class,
@@ -247,13 +241,6 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        'Form' => Collective\Html\FormFacade::class,
-        'Html' => Collective\Html\HtmlFacade::class,
-        'Captcha' => Mews\Captcha\Facades\Captcha::class,
-        'Ip'  => 'Zhuzhichao\IpLocationZh\Ip',
-        'Agent' => 'Jenssegers\Agent\Facades\Agent',
-        'Image' => Intervention\Image\Facades\Image::class,
-        'Excel' => Maatwebsite\Excel\Facades\Excel::class,
 
     ],
 
