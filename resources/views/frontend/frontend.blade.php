@@ -11,18 +11,21 @@
     <meta name="keywords" content="@yield('keywords')"/>
     <meta name="description" content="@yield('description')"/>
     <link href="/frontend/css/style.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="/frontend/js/main.js"></script>
-    <!--[if IE 6]>
-    <script type="text/javascript" src="/frontend/js/PNG_0.0.8a.js" ></script>
-    <script type="text/javascript">   DD_belatedPNG.fix('.block,.border,.cabye,.edu,.ent,.try,.gands-ftitle,.try-top,img')  </script>
-    <![endif]-->
-    <script language="javascript" type="text/javascript" src="/frontend/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/frontend/js/jquery.magnifier.js"></script>
     @yield('headlibs')
 </head>
 <body>
 @yield('main_content')
-
+<div class="cl"></div>
+<div id="main-bottom">
+    <p class="h1f12">GoProxy  a high-performance http proxy, https proxy, socks5 proxy, ss proxy, websocket proxies, tcp proxies</p>
+</div>
+<script src="/frontend/js/jquery.min.js"></script>
+<script>
+    $(".solution-nav a").click(function () {
+        $(".solution-item").hide().eq($(this).index()).show();
+        $(this).addClass("sd-animated sd-fadeInRight active").siblings().removeClass("sd-animated sd-fadeInRight active");
+    });
+</script>
 @yield('footlibs')
 </body>
 </html>
