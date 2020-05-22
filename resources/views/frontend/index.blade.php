@@ -3,36 +3,7 @@
 @section('keywords'){{config('app.keywords')}}@stop
 @section('description'){{config('app.description')}}@stop
 @section('main_content')
-    <div class="header-bg">
-        <div class="header">
-            <h1>GOPROXY 高性能http,https,websocket,tcp,socks5代理服务</h1>
-            <div class="navbar">
-                <ul>
-                    <li><a class="now" href="/">主页</a></li>
-                    <li><a href="/introduce/">产品介绍</a></li>
-                    <li><a href="/download/">产品下载</a></li>
-                    <li><a href="/purchase/">商业授权</a></li>
-                    <li><a href="/guide/">使用指南</a></li>
-                    <li><a href="/contact/">联系我们</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="index-banner-bg">
-        <div class="index-banner">
-            <ul>
-                <li class="banner-title">GOPROXY </li>
-                <li class="banner-text">高性能代理</li>
-                <li class="banner-textp"><p>支持内网穿透<br>链式代理,通讯加密智能HTTP,SOCKS5代理</p></li>
-            </ul>
-
-            <div class="index-banner-right"><a href="/download/" class="button-banner green" title="Proxy Server Software Download"><img src="/frontend/images/arrow_down.gif" alt="">产品下载</a><a href="/purchase/" class="button-banner yellow" title="Purchase Proxy Server Software"><img src="/frontend/images/arrow_buy.gif" alt="">商业授权</a></div>
-            <div class="facebook">
-                <a href="https://github.com/snail007/goproxy/blob/master/README_ZH.md" target="_blank"><img src="/frontend/images/top-forum.png" alt="git仓库" title="git仓库"></a>
-                <a href="https://github.com/snail007/goproxy/blob/master/README_ZH.md" target="_blank"><img src="/frontend/images/top-facebook.png" alt="OSchian仓库" title="OSchian仓库"></a>
-            </div>
-        </div>
-    </div>
+    <img src="/frontend/images/eps.png" alt="">
     <div class="main">
         <div class="item item2" style="padding-bottom:0">
             <div class="item2-tit">
