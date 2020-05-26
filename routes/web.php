@@ -18,4 +18,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/','Frontend\IndexController@Index');
 Route::get('introduce','Frontend\IntroduceController@Introduce');
 Route::get('download','Frontend\DownloadController@Donwload');
+Route::get('guide','Frontend\GuideController@Guide');
 

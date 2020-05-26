@@ -21,9 +21,8 @@
             <ul>
                 <li><a class="now" href="/">主页</a></li>
                 <li><a href="/introduce/">产品介绍</a></li>
-                <li><a href="/download/">产品下载</a></li>
-                <li><a href="/purchase/">商业授权</a></li>
-                <li><a href="/guide/">使用指南</a></li>
+                <li><a href="/download/">下载&授权</a></li>
+                <li><a href="/guide/">使用手册</a></li>
                 <li><a href="/contact/">联系我们</a></li>
             </ul>
         </div>

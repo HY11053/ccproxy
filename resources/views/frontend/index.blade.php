@@ -3,7 +3,6 @@
 @section('keywords'){{config('app.keywords')}}@stop
 @section('description'){{config('app.description')}}@stop
 @section('main_content')
-    <img src="/frontend/images/eps.png" alt="">
     <div class="main">
         <div class="item item2" style="padding-bottom:0">
             <div class="item2-tit">
