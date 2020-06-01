@@ -11,15 +11,13 @@
     <div class="top-nav-bar-wrap">
         <div id="nav_bar" class="index-module navBar">
             <div class="top-nav">
-                <a href="#super" class="active">推荐产品</a> <a href="#frame">商务产品</a> <a href="#scheme">
-                    旗舰产品</a> <a href="#overseas">海外产品</a> <a href="#scene">定制产品</a> <a href="#recom">源机推荐</a>
-                <a href="#more" style="display: none"></a>
+                <a href="#super" class="active">使用手册</a>
             </div>
         </div>
     </div>
     <div class="index-module">
         <div class="solution-super-contant help-contant">
-            <div id="contend-guide">
+            <div id="contend-bussguide">
                 <section class="content">
                     <article class="markdown-section" id="main">
                         <h2 id="如何安装"><a href="#/?id=%e5%a6%82%e4%bd%95%e5%ae%89%e8%a3%85" data-id="如何安装" class="anchor"><span>如何安装</span></a></h2>

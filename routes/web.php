@@ -18,5 +18,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/','Frontend\IndexController@Index');
 Route::get('introduce','Frontend\IntroduceController@Introduce');
 Route::get('download','Frontend\DownloadController@Donwload');
+Route::get('vs','Frontend\VsController@Vs');
+Route::get('purchase','Frontend\GuideController@BussGuide');
 Route::get('guide','Frontend\GuideController@Guide');
+Route::get('contact','Frontend\ContactController@Contact');
 

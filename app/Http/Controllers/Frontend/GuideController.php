@@ -11,4 +11,8 @@ class GuideController extends Controller
 
         return view('frontend.guide');
     }
+
+    public function BussGuide(){
+        return view('frontend.bussguide');
+    }
 }

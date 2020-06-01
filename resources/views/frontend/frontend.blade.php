@@ -15,12 +15,13 @@
 <body>
 <div class="header-bg">
     <div class="header">
-        <h1>GOPROXY 高性能http,https,websocket,tcp,socks5代理服务</h1>
+        <h1>GOPROXY 一个高性能，军用级安全的HTTP(S)、SOCKS5、TCP、UDP、SS、DNS代理服务。</h1>
         <div class="navbar">
             <ul>
                 <li><a  @if(Request::getrequesturi() =='/') class="now"  @endif href="/">主页</a></li>
                 <li><a @if(Request::getrequesturi() =='/introduce') class="now"  @endif  href="/introduce">产品介绍</a></li>
-                <li><a @if(Request::getrequesturi() =='/download') class="now"  @endif  href="/download">下载&授权</a></li>
+                <li><a @if(Request::getrequesturi() =='/download') class="now"  @endif  href="/download">下载使用</a></li>
+                <li><a @if(Request::getrequesturi() =='/vs') class="now"  @endif  href="/vs">功能对比</a></li>
                 <li><a @if(Request::getrequesturi() =='/guide') class="now"  @endif  href="/guide">使用手册</a></li>
                 <li><a @if(Request::getrequesturi() =='/contact') class="now"  @endif  href="/contact">联系我们</a></li>
             </ul>
