@@ -3,6 +3,24 @@
 @section('keywords'){{config('app.keywords')}}@stop
 @section('description'){{config('app.description')}}@stop
 @section('main_content')
+    <div class="index-banner-bg">
+        <div class="index-banner">
+            <div class="swiper" style="background: #fff; width: 700px; height: 389px; margin-left: 101px; margin-top: 28px; float:left;">
+                <img src="/frontend/images/ts.jpg" alt="" style="width: 100%;  overflow: hidden; border-radius: 1px;">
+            </div>
+            <div class="bannerright" style="float: right">
+                <ul >
+                    <li class="banner-title">GOPROXY </li>
+                    <li class="banner-text">高性能代理 <i class="windowsicon"></i> <i class="macosicon"></i> <i class="linuxicon"></i> <i class="androidicon"></i> </li>
+                    <li class="banner-textp"><p>支持内网穿透<br>链式代理,通讯加密智能HTTP,SOCKS5代理</p></li>
+                </ul>
+                <div class="index-banner-right"><a href="/download/" class="button-banner green" title="Proxy Server Software Download"><img src="/frontend/images/arrow_down.gif" alt="">产品下载</a><a href="/purchase/" class="button-banner yellow" title="Purchase Proxy Server Software"><img src="/frontend/images/arrow_buy.gif" alt="">商业授权</a></div>
+                <div class="facebook">
+                </div>
+            </div>
+
+        </div>
+    </div>
     <div class="main">
         <div class="item item2" style="padding-bottom:0">
             <div class="item2-tit">
